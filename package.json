@@ -6,7 +6,7 @@
     "start": "concurrently --kill-others \"json-server --watch db.json --port 8080\" \"ng serve\"",
     "build": "ng build",
     "test": "ng test",
-    "test-jenkins": "NODE_ENV=test jest --colors --experimental-modules",
+    "test-jenkins": "NODE_ENV=test jest --colors",
     "test-with-jest":"jest --coverage --coverageDirectory=output/coverage/jest",
     "lint": "ng lint",
     "e2e": "ng e2e"
