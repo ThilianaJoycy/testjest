@@ -7,6 +7,7 @@ module.exports = {
   coverageReporters: [
     "text",
     "cobertura"
-  ]
+  ],
+  transformIgnorePatterns: ['<rootDir>/node_modules/']
   // testResultsProcessor: "jest-jenkins-reporter"
 }
