@@ -4,5 +4,9 @@ module.exports = {
   verbose: true,
   collectCoverage: true,
   collectCoverageFrom: ["src/**/*.ts"],
-  testResultsProcessor: "jest-jenkins-reporter"
+  coverageReporters: [
+    "text",
+    "cobertura"
+  ]
+  // testResultsProcessor: "jest-jenkins-reporter"
 }

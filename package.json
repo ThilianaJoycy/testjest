@@ -7,6 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "test-jenkins": "NODE_ENV=test jest --colors --experimental-modules",
+    "test-with-jest":"jest --coverage --coverageDirectory=output/coverage/jest",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
