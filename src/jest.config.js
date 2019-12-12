@@ -9,6 +9,9 @@ module.exports = {
     "cobertura"
   ],
   moduleDirectories: ["node_modules", "src"],
-  // transformIgnorePatterns: ['/node_modules/(?!(@jest)/)']
+  transform: {
+    '^.+\\.(ts|js|html)$': 'ts-jest',
+  },
+  transformIgnorePatterns: ['node_modules/(?!@jest/)'],
   testResultsProcessor: "jest-jenkins-reporter"
 }
