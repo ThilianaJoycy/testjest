@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites version="1">
+    <testsuite name="AppComponent" tests="1" failures="0" errors="0" timestamp="2019-12-10T12:14:04.296Z" time="0.14">
+        <testcase classname="AppComponent" name="AppComponent should create the app" time="0.14"/>
+    </testsuite>
+    <testsuite name="HeroCardComponent" tests="2" failures="0" errors="0" timestamp="2019-12-10T12:14:04.297Z" time="0.181">
+        <testcase classname="HeroCardComponent" name="HeroCardComponent should create" time="0.131"/>
+        <testcase classname="HeroCardComponent" name="HeroCardComponent should emit removeHero event when call remove function" time="0.05"/>
+    </testsuite>
+    <testsuite name="HeroListItemComponent" tests="2" failures="0" errors="0" timestamp="2019-12-10T12:14:04.297Z" time="0.17099999999999999">
+        <testcase classname="HeroListItemComponent" name="HeroListItemComponent should create" time="0.126"/>
+        <testcase classname="HeroListItemComponent" name="HeroListItemComponent should emit SelectItem event when method select was called" time="0.045"/>
+    </testsuite>
+    <testsuite name="HeroListComponent" tests="2" failures="0" errors="0" timestamp="2019-12-10T12:14:04.297Z" time="0.233">
+        <testcase classname="HeroListComponent" name="HeroListComponent should create" time="0.171"/>
+        <testcase classname="HeroListComponent" name="HeroListComponent should emit selectItem event when onSelect function is call" time="0.062"/>
+    </testsuite>
+    <testsuite name="EmptyCardComponent" tests="1" failures="0" errors="0" timestamp="2019-12-10T12:14:04.297Z" time="0.118">
+        <testcase classname="EmptyCardComponent" name="EmptyCardComponent should create" time="0.118"/>
+    </testsuite>
+    <testsuite name="TeamComponent" tests="2" failures="0" errors="0" timestamp="2019-12-10T12:14:04.297Z" time="0.182">
+        <testcase classname="TeamComponent" name="TeamComponent should create" time="0.142"/>
+        <testcase classname="TeamComponent" name="TeamComponent should emit event removeMember with formatted object memberToRemove" time="0.04"/>
+    </testsuite>
+    <testsuite name="CharactersService" tests="1" failures="0" errors="0" timestamp="2019-12-10T12:14:04.297Z" time="0.012">
+        <testcase classname="CharactersService" name="CharactersService should be created" time="0.012"/>
+    </testsuite>
+    <testsuite name="TeamSelectorComponent" tests="7" failures="0" errors="0" timestamp="2019-12-10T12:14:04.297Z" time="0.49399999999999994">
+        <testcase classname="TeamSelectorComponent" name="TeamSelectorComponent should create" time="0.151"/>
+        <testcase classname="TeamSelectorComponent" name="TeamSelectorComponent should add Hero in heroesTeam when onSelectMember is called with Hero" time="0.076"/>
+        <testcase classname="TeamSelectorComponent" name="TeamSelectorComponent should called window.alert when you try to add hero with full heroesTeam" time="0.07"/>
+        <testcase classname="TeamSelectorComponent" name="TeamSelectorComponent should add Hero in wickedTeam when onSelectMember is called with Wicked" time="0.049"/>
+        <testcase classname="TeamSelectorComponent" name="TeamSelectorComponent should called window.alert when you try to add hero with full wickedTeam" time="0.049"/>
+        <testcase classname="TeamSelectorComponent" name="TeamSelectorComponent should remove hero from heroesTeam when onRemoveMember was called with an hero" time="0.05"/>
+        <testcase classname="TeamSelectorComponent" name="TeamSelectorComponent should remove wicked from wickedTeam when onRemoveMember was called with an wicked" time="0.049"/>
+    </testsuite>
+</testsuites>
