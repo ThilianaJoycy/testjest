@@ -8,6 +8,7 @@ module.exports = {
     "text",
     "cobertura"
   ],
-  transformIgnorePatterns: ['/node_modules/(?!(@jest)/)']
-  // testResultsProcessor: "jest-jenkins-reporter"
+  moduleDirectories: ["node_modules", "src"],
+  // transformIgnorePatterns: ['/node_modules/(?!(@jest)/)']
+  testResultsProcessor: "jest-jenkins-reporter"
 }
