@@ -12,6 +12,6 @@ module.exports = {
   transform: {
     '^.+\\.(ts|js|html)$': 'ts-jest',
   },
-  transformIgnorePatterns: ['node_modules/(?!@jest/)'],
+  transformIgnorePatterns: ['node_modules/(?!@babel/)'],
   testResultsProcessor: "jest-jenkins-reporter"
 }
