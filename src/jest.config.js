@@ -1,10 +1,12 @@
 const {defaults} = require('jest-config');
+const esModules = ['@agm', 'ngx-bootstrap', 'lodash-es'].join('|');
 
 module.exports = {
   preset: 'jest-preset-angular',
   roots: ['src'],
   transform: {
-    '^.+\\.(ts|js|html)$': 'ts-jest',
+    [`(${esModules}).+\\.js$`]: 'babel-jest',
+    '^.+\\.(ts|js|html)$': 'jest-preset-angular/preprocessor.js',
   },
   setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
   moduleNameMapper: {
@@ -15,7 +17,7 @@ module.exports = {
     '@src/(.*)': '<rootDir>/src/src/$1',
     '@state/(.*)': '<rootDir>/src/app/state/$1'
   },
-  transformIgnorePatterns: ['node_modules/(?!@babel/)'],
+  transformIgnorePatterns: [`/node_modules/(?!${esModules})`],
   verbose: true,
   collectCoverage: true,
   collectCoverageFrom: ["src/**/*.ts"],
