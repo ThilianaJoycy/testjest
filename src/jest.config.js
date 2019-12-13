@@ -5,8 +5,7 @@ module.exports = {
   preset: 'jest-preset-angular',
   roots: ['src'],
   transform: {
-    [`(${esModules}).+\\.js$`]: 'babel-jest',
-    '^.+\\.(ts|js|html)$': 'jest-preset-angular/preprocessor.js',
+    "\\.js$": "<rootDir>/node_modules/babel-jest"
   },
   setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
   moduleNameMapper: {
