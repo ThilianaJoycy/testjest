@@ -3,6 +3,9 @@ import { AppComponent } from './app.component';
 
 import { RouterTestingModule } from '@angular/router/testing';
 
+import { BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -10,6 +13,11 @@ describe('AppComponent', () => {
       declarations: [AppComponent]
     }).compileComponents();
   }));
+  beforeEach(() => {
+    TestBed.resetTestEnvironment();
+    TestBed.initTestEnvironment(BrowserDynamicTestingModule,
+       platformBrowserDynamicTesting());
+   });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
