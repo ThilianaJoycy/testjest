@@ -34,6 +34,7 @@
     "@angular/cli": "~7.3.5",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "~7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-decorators": "^7.7.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
