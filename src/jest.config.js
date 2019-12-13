@@ -7,7 +7,7 @@ module.exports = {
   transform: {
     "\\.js$": "<rootDir>/node_modules/babel-jest"
   },
-  setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
+  // setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
   moduleNameMapper: {
     '@app/(.*)': '<rootDir>/src/app/$1',
     '@assets/(.*)': '<rootDir>/src/assets/$1',

@@ -16,11 +16,6 @@ describe('AppComponent', () => {
       declarations: [AppComponent]
     }).compileComponents();
   }));
-  beforeEach(() => {
-    TestBed.resetTestEnvironment();
-    TestBed.initTestEnvironment(BrowserDynamicTestingModule,
-       platformBrowserDynamicTesting());
-   });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
